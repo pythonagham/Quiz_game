@@ -39,7 +39,6 @@ class QuizApp:
         self.option_buttons = []
 
         for i in range(4):
-            #option_button = tk.Radiobutton(self.master, text="", variable=self.var_option, value="")
             option_button = tk.Radiobutton(self.master, text="", variable=self.var_option, value="",
                                            command=self.check_answer,bg='#FFEEEF',font=('Helvetica', 14,'bold'))
 
@@ -79,8 +78,6 @@ class QuizApp:
 def main():
     root = tk.Tk()
     app = QuizApp(root)
-
-    #root.title("Pomodoro Timer")
     root.geometry('700x600')
     root.config(bg='#FFEEEF')
     root.resizable(False, False)
